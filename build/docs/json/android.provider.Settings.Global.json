@@ -1,0 +1,119 @@
+{
+  "methods": {
+    "get(android.content.ContentResolver)": {
+      "isImplementation": false,
+      "modifiers": [
+        "private",
+        "static"
+      ],
+      "params": [
+        "cr"
+      ],
+      "returnType": "java.util.Map\u003cjava.lang.String,java.lang.String\u003e",
+      "exceptions": [],
+      "name": "get(android.content.ContentResolver)"
+    },
+    "getString(android.content.ContentResolver,java.lang.String)": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected",
+        "static"
+      ],
+      "params": [
+        "cr",
+        "name"
+      ],
+      "returnType": "java.lang.String",
+      "exceptions": [],
+      "name": "getString(android.content.ContentResolver,java.lang.String)"
+    },
+    "getStringForUser(android.content.ContentResolver,java.lang.String,int)": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected",
+        "static"
+      ],
+      "params": [
+        "cr",
+        "name",
+        "userHandle"
+      ],
+      "returnType": "java.lang.String",
+      "exceptions": [],
+      "minSdk": 17,
+      "name": "getStringForUser(android.content.ContentResolver,java.lang.String,int)"
+    },
+    "putString(android.content.ContentResolver,java.lang.String,java.lang.String)": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected",
+        "static"
+      ],
+      "params": [
+        "cr",
+        "name",
+        "value"
+      ],
+      "returnType": "boolean",
+      "exceptions": [],
+      "name": "putString(android.content.ContentResolver,java.lang.String,java.lang.String)"
+    },
+    "putStringForUser(android.content.ContentResolver,java.lang.String,java.lang.String,int)": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected",
+        "static"
+      ],
+      "params": [
+        "cr",
+        "name",
+        "value",
+        "userHandle"
+      ],
+      "returnType": "boolean",
+      "exceptions": [],
+      "minSdk": 17,
+      "name": "putStringForUser(android.content.ContentResolver,java.lang.String,java.lang.String,int)"
+    },
+    "reset()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "params": [],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "reset()"
+    }
+  },
+  "imports": [
+    "android.os.Build.VERSION_CODES.JELLY_BEAN",
+    "android.os.Build.VERSION_CODES.JELLY_BEAN_MR1",
+    "android.os.Build.VERSION_CODES.LOLLIPOP",
+    "android.os.Build.VERSION_CODES.M",
+    "android.os.Build.VERSION_CODES.P",
+    "android.content.ContentResolver",
+    "android.content.Context",
+    "android.os.Build",
+    "android.provider.Settings",
+    "android.text.TextUtils",
+    "android.util.ArrayMap",
+    "org.robolectric.RuntimeEnvironment",
+    "org.robolectric.annotation.Implementation",
+    "org.robolectric.annotation.Implements",
+    "org.robolectric.annotation.Resetter",
+    "org.robolectric.shadow.api.Shadow",
+    "org.robolectric.util.ReflectionHelpers.ClassParameter",
+    "java.util.ArrayList",
+    "java.util.Arrays",
+    "java.util.HashMap",
+    "java.util.HashSet",
+    "java.util.List",
+    "java.util.Map",
+    "java.util.Set",
+    "java.util.WeakHashMap",
+    "java.util.stream.Collectors"
+  ],
+  "name": "org.robolectric.shadows.ShadowSettings.ShadowGlobal"
+}

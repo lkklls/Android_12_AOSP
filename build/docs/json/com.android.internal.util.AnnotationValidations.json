@@ -1,0 +1,41 @@
+{
+  "methods": {
+    "validate(java.lang.Class\u003c? extends java.lang.annotation.Annotation\u003e,java.lang.annotation.Annotation,int)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "params": [
+        "annotation",
+        "ignored",
+        "value"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "validate(java.lang.Class\u003c? extends java.lang.annotation.Annotation\u003e,java.lang.annotation.Annotation,int)"
+    },
+    "validate(java.lang.Class\u003c? extends java.lang.annotation.Annotation\u003e,java.lang.annotation.Annotation,long)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "params": [
+        "annotation",
+        "ignored",
+        "value"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "validate(java.lang.Class\u003c? extends java.lang.annotation.Annotation\u003e,java.lang.annotation.Annotation,long)"
+    }
+  },
+  "imports": [
+    "java.lang.annotation.Annotation",
+    "com.android.internal.util.AnnotationValidations",
+    "org.robolectric.annotation.Implementation",
+    "org.robolectric.annotation.Implements"
+  ],
+  "name": "org.robolectric.shadows.ShadowAnnotationValidations"
+}

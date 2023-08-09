@@ -1,0 +1,45 @@
+{
+  "methods": {
+    "getDataBlockSize()": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [],
+      "returnType": "int",
+      "exceptions": [],
+      "name": "getDataBlockSize()"
+    },
+    "reset()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "params": [],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "reset()"
+    },
+    "setDataBlockSize(int)": {
+      "isImplementation": false,
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "params": [
+        "dataBlockSize"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "setDataBlockSize(int)"
+    }
+  },
+  "imports": [
+    "android.service.persistentdata.PersistentDataBlockManager",
+    "org.robolectric.annotation.Implementation",
+    "org.robolectric.annotation.Implements",
+    "org.robolectric.annotation.Resetter"
+  ],
+  "name": "org.robolectric.shadows.ShadowPersistentDataBlockManager"
+}

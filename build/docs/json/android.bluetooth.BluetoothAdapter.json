@@ -1,0 +1,354 @@
+{
+  "methods": {
+    "cancelDiscovery()": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [],
+      "returnType": "boolean",
+      "exceptions": [],
+      "name": "cancelDiscovery()"
+    },
+    "checkBluetoothAddress(java.lang.String)": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected",
+        "static"
+      ],
+      "params": [
+        "address"
+      ],
+      "returnType": "boolean",
+      "exceptions": [],
+      "name": "checkBluetoothAddress(java.lang.String)",
+      "documentation": "Validate a Bluetooth address, such as \"00:43:A8:23:10:F0\" Alphabetic characters must be\nuppercase to be valid.\n\n@param address Bluetooth address as string\n@return true if the address is valid, false otherwise\n"
+    },
+    "disable()": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [],
+      "returnType": "boolean",
+      "exceptions": [],
+      "name": "disable()"
+    },
+    "enable()": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [],
+      "returnType": "boolean",
+      "exceptions": [],
+      "name": "enable()"
+    },
+    "getAddress()": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [],
+      "returnType": "java.lang.String",
+      "exceptions": [],
+      "name": "getAddress()"
+    },
+    "getBondedDevices()": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [],
+      "returnType": "java.util.Set\u003candroid.bluetooth.BluetoothDevice\u003e",
+      "exceptions": [],
+      "name": "getBondedDevices()"
+    },
+    "getDefaultAdapter()": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected",
+        "static"
+      ],
+      "params": [],
+      "returnType": "android.bluetooth.BluetoothAdapter",
+      "exceptions": [],
+      "name": "getDefaultAdapter()"
+    },
+    "getLeScanCallbacks()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "java.util.Set\u003candroid.bluetooth.BluetoothAdapter.LeScanCallback\u003e",
+      "exceptions": [],
+      "name": "getLeScanCallbacks()"
+    },
+    "getName()": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [],
+      "returnType": "java.lang.String",
+      "exceptions": [],
+      "name": "getName()"
+    },
+    "getProfileConnectionState(int)": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [
+        "profile"
+      ],
+      "returnType": "int",
+      "exceptions": [],
+      "name": "getProfileConnectionState(int)",
+      "documentation": "Returns the connection state for the given Bluetooth {@code profile}, defaulting to {@link\nBluetoothProfile.STATE_DISCONNECTED} if the profile\u0027s connection state was never set.\n\n\u003cp\u003eSet a Bluetooth profile\u0027s connection state via {@link #setProfileConnectionState(int, int)}.\n"
+    },
+    "getScanMode()": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [],
+      "returnType": "int",
+      "exceptions": [],
+      "name": "getScanMode()"
+    },
+    "getSingleLeScanCallback()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "android.bluetooth.BluetoothAdapter.LeScanCallback",
+      "exceptions": [],
+      "name": "getSingleLeScanCallback()"
+    },
+    "getState()": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [],
+      "returnType": "int",
+      "exceptions": [],
+      "name": "getState()"
+    },
+    "isDiscovering()": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [],
+      "returnType": "boolean",
+      "exceptions": [],
+      "name": "isDiscovering()"
+    },
+    "isEnabled()": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [],
+      "returnType": "boolean",
+      "exceptions": [],
+      "name": "isEnabled()"
+    },
+    "isMultipleAdvertisementSupported()": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [],
+      "returnType": "boolean",
+      "exceptions": [],
+      "minSdk": 21,
+      "name": "isMultipleAdvertisementSupported()"
+    },
+    "listenUsingInsecureRfcommWithServiceRecord(java.lang.String,java.util.UUID)": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [
+        "serviceName",
+        "uuid"
+      ],
+      "returnType": "android.bluetooth.BluetoothServerSocket",
+      "exceptions": [],
+      "name": "listenUsingInsecureRfcommWithServiceRecord(java.lang.String,java.util.UUID)"
+    },
+    "setAddress(java.lang.String)": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "address"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "setAddress(java.lang.String)"
+    },
+    "setBondedDevices(java.util.Set\u003candroid.bluetooth.BluetoothDevice\u003e)": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "bluetoothDevices"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "setBondedDevices(java.util.Set\u003candroid.bluetooth.BluetoothDevice\u003e)"
+    },
+    "setEnabled(boolean)": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "enabled"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "setEnabled(boolean)"
+    },
+    "setIsMultipleAdvertisementSupported(boolean)": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "supported"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "setIsMultipleAdvertisementSupported(boolean)"
+    },
+    "setName(java.lang.String)": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [
+        "name"
+      ],
+      "returnType": "boolean",
+      "exceptions": [],
+      "name": "setName(java.lang.String)"
+    },
+    "setProfileConnectionState(int,int)": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "profile",
+        "state"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "setProfileConnectionState(int,int)",
+      "documentation": "Sets the connection state {@code state} for the given BLuetoothProfile {@code profile}\n"
+    },
+    "setScanMode(int)": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [
+        "scanMode"
+      ],
+      "returnType": "boolean",
+      "exceptions": [],
+      "name": "setScanMode(int)"
+    },
+    "setState(int)": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "state"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "setState(int)"
+    },
+    "startDiscovery()": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [],
+      "returnType": "boolean",
+      "exceptions": [],
+      "name": "startDiscovery()"
+    },
+    "startLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [
+        "callback"
+      ],
+      "returnType": "boolean",
+      "exceptions": [],
+      "minSdk": 18,
+      "name": "startLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)"
+    },
+    "startLeScan(java.util.UUID[],android.bluetooth.BluetoothAdapter.LeScanCallback)": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [
+        "serviceUuids",
+        "callback"
+      ],
+      "returnType": "boolean",
+      "exceptions": [],
+      "minSdk": 18,
+      "name": "startLeScan(java.util.UUID[],android.bluetooth.BluetoothAdapter.LeScanCallback)"
+    },
+    "stopLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected"
+      ],
+      "params": [
+        "callback"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "minSdk": 18,
+      "name": "stopLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)"
+    }
+  },
+  "imports": [
+    "android.os.Build.VERSION_CODES.JELLY_BEAN_MR2",
+    "android.os.Build.VERSION_CODES.LOLLIPOP",
+    "android.bluetooth.BluetoothAdapter",
+    "android.bluetooth.BluetoothAdapter.LeScanCallback",
+    "android.bluetooth.BluetoothDevice",
+    "android.bluetooth.BluetoothProfile",
+    "android.bluetooth.BluetoothServerSocket",
+    "android.bluetooth.BluetoothSocket",
+    "android.os.ParcelUuid",
+    "java.util.Collections",
+    "java.util.HashMap",
+    "java.util.HashSet",
+    "java.util.Map",
+    "java.util.Set",
+    "java.util.UUID",
+    "org.robolectric.annotation.Implementation",
+    "org.robolectric.annotation.Implements"
+  ],
+  "name": "org.robolectric.shadows.ShadowBluetoothAdapter"
+}

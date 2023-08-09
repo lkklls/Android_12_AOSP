@@ -1,0 +1,50 @@
+{
+  "methods": {
+    "nBuildMeasuredText(long,char[],boolean,boolean)": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected",
+        "static"
+      ],
+      "params": [
+        "nativeBuilderPtr",
+        "text",
+        "computeHyphenation",
+        "computeLayout"
+      ],
+      "returnType": "long",
+      "exceptions": [],
+      "name": "nBuildMeasuredText(long,char[],boolean,boolean)"
+    },
+    "nInitBuilder()": {
+      "isImplementation": true,
+      "modifiers": [
+        "protected",
+        "static"
+      ],
+      "params": [],
+      "returnType": "long",
+      "exceptions": [],
+      "name": "nInitBuilder()"
+    },
+    "reset()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "params": [],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "reset()"
+    }
+  },
+  "imports": [
+    "android.os.Build.VERSION_CODES.Q",
+    "android.graphics.text.MeasuredText",
+    "org.robolectric.annotation.Implementation",
+    "org.robolectric.annotation.Implements",
+    "org.robolectric.annotation.Resetter"
+  ],
+  "name": "org.robolectric.shadows.ShadowMeasuredTextBuilder"
+}
